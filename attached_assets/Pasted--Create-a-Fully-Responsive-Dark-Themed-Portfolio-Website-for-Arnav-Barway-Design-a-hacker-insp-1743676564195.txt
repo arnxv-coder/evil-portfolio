@@ -1,0 +1,74 @@
+🔥 Create a Fully Responsive Dark-Themed Portfolio Website for Arnav Barway 🔥
+
+Design a hacker-inspired portfolio website with a sinister, cyberpunk, or gothic aesthetic. The website should feature glowing neon accents (red, purple, green), smooth animations, and interactive elements for a futuristic, 'Dark Web Sorcerer' feel.
+
+🔥 Main Features & Sections:
+👾 Hero Section (First Impression Matters!)
+Large glitch-effect name: 'Arnav Barway' (Keep only one instance)
+
+Subtitle: 'Dark Web Sorcerer' with a typewriter effect
+
+Glowing "Hire Me" button with a pulsating neon hover effect
+
+Optional: 3D Parallax effect for a more dynamic feel
+
+🕵️‍♂️ About Me (Mysterious, Hacker-Style Layout)
+A short bio using a cyber/hacker font (Orbitron or VT323)
+
+Glitch-hover animation when hovering over the text
+
+Glassmorphism-style card for a modern look
+
+💻 Skills Section (Make It Interactive & Dynamic)
+Four animated skill icons (JavaScript, Python, Security, Web Dev)
+
+Hover effect: Icons glow red/purple/green
+
+Glassmorphism-style layout for a futuristic feel
+
+🕸️ Portfolio Section (Showcase of Projects)
+A dynamic project grid layout
+
+Each project card should include:
+✅ A screenshot
+✅ A short description
+✅ A hover effect (eerie glow/glitch)
+✅ A GitHub or Live Demo link
+
+Clicking a project should open a modal or redirect
+
+📨 Contact Section (Cyberpunk Vibes!)
+Dark-themed glowing input fields
+
+Animated placeholders that react when typing
+
+A ‘Send Message’ button that pulsates on hover
+
+Optional: Terminal-style form submission animation
+
+🎨 Dark Mode & Immersive Animations:
+✅ Always in Dark Mode – Deep black backgrounds (#0a0a0a)
+✅ Smooth page transitions & hover effects (GSAP or Anime.js)
+✅ Glowing neon elements (Red/Purple/Green)
+✅ Floating particles.js for a sci-fi effect
+✅ Glitch hover effects on buttons & images
+✅ Matrix-like animated background (Optional)
+
+🛠️ Tech Stack:
+HTML (Semantic, structured code)
+
+CSS (Tailwind or SCSS) for modern styling
+
+JavaScript (GSAP or Anime.js) for animations
+
+Fonts: Orbitron or VT323 for a futuristic hacker feel
+
+Icons: FontAwesome or Lucide icons for a clean UI
+
+🔥 Final Website Goals:
+✔️ Fully responsive across mobile, tablet, and desktop
+✔️ Well-aligned, visually stunning, and immersive UI
+✔️ Longer layout with better spacing and fluid animations
+✔️ Sleek, hacker-style portfolio with a modern UX/UI
+
+This should result in a sleek, 'evil'-looking, cyberpunk portfolio that stands out. Make sure the code is clean, modular, and easy to edit! 🚀💀

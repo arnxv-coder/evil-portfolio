@@ -1,0 +1,67 @@
+I want to build a fully responsive, hacker-inspired portfolio website with a dark cyberpunk aesthetic. The website should have glowing neon elements (red, purple, green), smooth animations, and interactive elements for a futuristic, high-tech look.
+
+🔍 Problem & Purpose:
+The goal is to showcase my coding projects and skills in a visually stunning, futuristic portfolio. It should stand out from traditional portfolios with immersive animations, glitch effects, and a deep cyber theme.
+
+🎯 Features & Functionality:
+🔹 Hero Section (First Impression Matters!)
+Large glitch-effect name: "Arnav Barway"
+
+Subtitle: "Dark Web Sorcerer", styled with a typewriter effect
+
+Glowing ‘Hire Me’ button with pulsating hover effect
+
+(Optional) 3D Parallax effect for a dynamic feel
+
+🔹 About Me Section (Hacker Vibes)
+Cyber/hacker-style font (Orbitron or VT323)
+
+Glitch-hover animation on text
+
+Glassmorphism-style card for a sleek look
+
+🔹 Skills Section (Interactive Animations)
+Animated skill icons (JavaScript, Python, Web Dev, Security)
+
+Hover effect: Icons glow red/purple/green
+
+🔹 Portfolio Section (Showcase of My Work)
+Dynamic project grid layout
+
+Each project card should include:
+✅ Screenshot
+✅ Short description
+✅ Hover effect: Glitch/neon glow
+✅ Click to open modal or GitHub link
+
+🔹 Contact Section (Cyberpunk UI)
+Dark-themed glowing input fields
+
+Animated placeholders that react when typing
+
+A ‘Send Message’ button that pulsates on hover
+
+(Optional) Terminal-style form submission animation
+
+🎨 Design & UI Preferences:
+✅ Always Dark Mode – Deep black backgrounds (#0a0a0a)
+✅ Glowing neon UI elements (Red/Purple/Green)
+✅ Smooth hover & page transitions (GSAP or Anime.js)
+✅ Floating cyberpunk particles.js for an immersive effect
+✅ Glitch hover effects on buttons & images
+✅ (Optional) Matrix-like animated background
+
+🛠️ Preferred Tech Stack:
+Frontend: HTML + CSS (Tailwind or SCSS) + JavaScript
+
+Animations: GSAP or Anime.js
+
+Fonts: Orbitron / VT323 for a futuristic look
+
+Icons: FontAwesome or Lucide icons
+
+✅ Final Goal:
+✔️ Fully responsive across mobile, tablet, and desktop
+✔️ Smooth animations & immersive cyber aesthetics
+✔️ Well-structured code (clean, modular, and easy to edit)
+✔️ Visually stunning hacker-style portfolio with modern UX/UI
