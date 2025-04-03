@@ -144,12 +144,12 @@ const Contact = () => {
                   onChange={handleInputChange}
                   onFocus={() => handleFocus('name')}
                   onBlur={() => handleBlur('name')}
-                  className="terminal-input w-full py-3 px-4 rounded-md bg-cyber-darkgray border border-cyber-green focus:border-cyber-green focus:ring-0 font-vt323 text-lg" 
+                  className="terminal-input w-full py-3 px-4 rounded-md bg-[#121212] border border-[#00ff00] focus:border-[#00ff00] focus:ring-0 font-vt323 text-lg" 
                   placeholder="_"
                 />
                 <label 
                   htmlFor="name" 
-                  className={`absolute top-3 left-4 font-vt323 text-lg text-cyber-green transition-all duration-300 pointer-events-none ${focused.name ? 'transform -translate-y-7 scale-75' : ''}`}
+                  className={`absolute top-3 left-4 font-vt323 text-lg text-[#00ff00] transition-all duration-300 pointer-events-none ${focused.name ? 'transform -translate-y-7 scale-75' : ''}`}
                 >
                   NAME:
                 </label>
@@ -164,12 +164,12 @@ const Contact = () => {
                   onChange={handleInputChange}
                   onFocus={() => handleFocus('email')}
                   onBlur={() => handleBlur('email')}
-                  className="terminal-input w-full py-3 px-4 rounded-md bg-cyber-darkgray border border-cyber-purple focus:border-cyber-purple focus:ring-0 font-vt323 text-lg" 
+                  className="terminal-input w-full py-3 px-4 rounded-md bg-[#121212] border border-[#b14aed] focus:border-[#b14aed] focus:ring-0 font-vt323 text-lg" 
                   placeholder="_"
                 />
                 <label 
                   htmlFor="email" 
-                  className={`absolute top-3 left-4 font-vt323 text-lg text-cyber-purple transition-all duration-300 pointer-events-none ${focused.email ? 'transform -translate-y-7 scale-75' : ''}`}
+                  className={`absolute top-3 left-4 font-vt323 text-lg text-[#b14aed] transition-all duration-300 pointer-events-none ${focused.email ? 'transform -translate-y-7 scale-75' : ''}`}
                 >
                   EMAIL:
                 </label>
@@ -184,12 +184,12 @@ const Contact = () => {
                   onFocus={() => handleFocus('message')}
                   onBlur={() => handleBlur('message')}
                   rows={5} 
-                  className="terminal-input w-full py-3 px-4 rounded-md bg-cyber-darkgray border border-cyber-red focus:border-cyber-red focus:ring-0 font-vt323 text-lg resize-none" 
+                  className="terminal-input w-full py-3 px-4 rounded-md bg-[#121212] border border-[#ff0043] focus:border-[#ff0043] focus:ring-0 font-vt323 text-lg resize-none" 
                   placeholder="_"
                 ></textarea>
                 <label 
                   htmlFor="message" 
-                  className={`absolute top-3 left-4 font-vt323 text-lg text-cyber-red transition-all duration-300 pointer-events-none ${focused.message ? 'transform -translate-y-7 scale-75' : ''}`}
+                  className={`absolute top-3 left-4 font-vt323 text-lg text-[#ff0043] transition-all duration-300 pointer-events-none ${focused.message ? 'transform -translate-y-7 scale-75' : ''}`}
                 >
                   MESSAGE:
                 </label>
@@ -197,7 +197,7 @@ const Contact = () => {
               
               <button 
                 type="submit" 
-                className="w-full py-3 px-6 bg-transparent border-2 border-cyber-green text-cyber-green font-orbitron tracking-wider rounded hover:bg-cyber-green hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center gap-2 animate-pulse"
+                className="w-full py-3 px-6 bg-transparent border-2 border-[#00ff00] text-[#00ff00] font-orbitron tracking-wider rounded hover:bg-[#00ff00] hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center gap-2 animate-pulse"
               >
                 <span>INITIALIZE TRANSMISSION</span>
                 <i className="fas fa-arrow-right"></i>
@@ -207,35 +207,35 @@ const Contact = () => {
           
           <div className="w-full md:w-1/2 flex flex-col space-y-6">
             <div className="glassmorphism rounded-lg p-6">
-              <h3 className="font-orbitron text-xl mb-6 text-cyber-purple">CONNECTION DETAILS</h3>
+              <h3 className="font-orbitron text-xl mb-6 text-[#b14aed]">CONNECTION DETAILS</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-cyber-darkgray p-3 rounded-lg">
-                    <i className="fas fa-envelope text-cyber-green text-xl"></i>
+                  <div className="bg-[#121212] p-3 rounded-lg">
+                    <i className="fas fa-envelope text-[#00ff00] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-orbitron text-lg text-cyber-green">EMAIL</h4>
+                    <h4 className="font-orbitron text-lg text-[#00ff00]">EMAIL</h4>
                     <p className="font-vt323 text-lg text-gray-300">arnav.barway@darkweb.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-cyber-darkgray p-3 rounded-lg">
-                    <i className="fas fa-map-marker-alt text-cyber-purple text-xl"></i>
+                  <div className="bg-[#121212] p-3 rounded-lg">
+                    <i className="fas fa-map-marker-alt text-[#b14aed] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-orbitron text-lg text-cyber-purple">LOCATION</h4>
+                    <h4 className="font-orbitron text-lg text-[#b14aed]">LOCATION</h4>
                     <p className="font-vt323 text-lg text-gray-300">Night City, Cyberspace</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-cyber-darkgray p-3 rounded-lg">
-                    <i className="fas fa-wifi text-cyber-red text-xl"></i>
+                  <div className="bg-[#121212] p-3 rounded-lg">
+                    <i className="fas fa-wifi text-[#ff0043] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-orbitron text-lg text-cyber-red">ONLINE STATUS</h4>
+                    <h4 className="font-orbitron text-lg text-[#ff0043]">ONLINE STATUS</h4>
                     <p className="font-vt323 text-lg text-gray-300">Always connected</p>
                   </div>
                 </div>
@@ -243,14 +243,14 @@ const Contact = () => {
             </div>
             
             <div className="glassmorphism rounded-lg p-6">
-              <h3 className="font-orbitron text-xl mb-6 text-cyber-red">NETWORK PROTOCOLS</h3>
+              <h3 className="font-orbitron text-xl mb-6 text-[#ff0043]">NETWORK PROTOCOLS</h3>
               
               <div className="flex justify-between">
                 <a 
                   href="https://github.com/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-cyber-darkgray p-4 rounded-lg text-cyber-green hover:bg-cyber-gray transition-colors"
+                  className="bg-[#121212] p-4 rounded-lg text-[#00ff00] hover:bg-[#1a1a1a] transition-colors"
                 >
                   <i className="fab fa-github text-2xl"></i>
                 </a>
@@ -258,7 +258,7 @@ const Contact = () => {
                   href="https://linkedin.com/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-cyber-darkgray p-4 rounded-lg text-cyber-purple hover:bg-cyber-gray transition-colors"
+                  className="bg-[#121212] p-4 rounded-lg text-[#b14aed] hover:bg-[#1a1a1a] transition-colors"
                 >
                   <i className="fab fa-linkedin text-2xl"></i>
                 </a>
@@ -266,7 +266,7 @@ const Contact = () => {
                   href="https://twitter.com/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-cyber-darkgray p-4 rounded-lg text-cyber-red hover:bg-cyber-gray transition-colors"
+                  className="bg-[#121212] p-4 rounded-lg text-[#ff0043] hover:bg-[#1a1a1a] transition-colors"
                 >
                   <i className="fab fa-twitter text-2xl"></i>
                 </a>
@@ -274,7 +274,7 @@ const Contact = () => {
                   href="https://discord.com/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-cyber-darkgray p-4 rounded-lg text-cyber-blue hover:bg-cyber-gray transition-colors"
+                  className="bg-[#121212] p-4 rounded-lg text-[#00a2ff] hover:bg-[#1a1a1a] transition-colors"
                 >
                   <i className="fab fa-discord text-2xl"></i>
                 </a>
