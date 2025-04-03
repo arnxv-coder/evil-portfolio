@@ -17,7 +17,11 @@ const EvilAccent = () => {
     ">_ TRACING IP ADDRESS...",
     ">_ BIOMETRIC DATA COLLECTED",
     ">_ MALWARE INJECTION SUCCESSFUL",
-    ">_ ENCRYPTION KEYS STOLEN"
+    ">_ ENCRYPTION KEYS STOLEN",
+    ">_ arnxv.evils.in DOMAIN ACTIVATED",
+    ">_ EVIL PRESENCE DETECTED",
+    ">_ DIGITAL SOUL CORRUPTED",
+    ">_ REALITY DISTORTION FIELD ACTIVE"
   ];
   
   useEffect(() => {
@@ -46,7 +50,7 @@ const EvilAccent = () => {
     
     // Random terminal appearances
     const terminalInterval = setInterval(() => {
-      if (Math.random() > 0.95) {
+      if (Math.random() > 0.85) {
         const randomMessage = terminalMessages[Math.floor(Math.random() * terminalMessages.length)];
         setTerminalText(randomMessage);
         setShowTerminal(true);
@@ -54,9 +58,9 @@ const EvilAccent = () => {
         // Hide terminal after a few seconds
         setTimeout(() => {
           setShowTerminal(false);
-        }, 3000);
+        }, 4000);
       }
-    }, 8000);
+    }, 6000);
     
     // Scanline effect
     const scanlineInterval = setInterval(() => {
@@ -156,6 +160,14 @@ const EvilAccent = () => {
       
       {/* Random digital noise */}
       <div className="absolute inset-0 opacity-5 mix-blend-screen pointer-events-none bg-noise"></div>
+      
+      {/* Evil domain accent */}
+      <div className="absolute bottom-5 right-5 text-[10px] font-mono text-[#ff0043] opacity-80">
+        <div className="flex items-center">
+          <div className="h-1.5 w-1.5 rounded-full bg-[#ff0043] mr-1 animate-pulse"></div>
+          <span className="evil-domain">arnxv.evils.in</span>
+        </div>
+      </div>
     </div>
   );
 };

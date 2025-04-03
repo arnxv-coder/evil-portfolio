@@ -323,4 +323,43 @@
   .animate-scanline {
     animation: scanline 8s linear infinite;
   }
+  
+  /* Evil domain styling */
+  .evil-domain {
+    font-family: 'VT323', monospace;
+    position: relative;
+    color: #ff0043;
+    text-shadow: 0 0 5px #ff0043, 0 0 10px #ff0043;
+    letter-spacing: 1px;
+    animation: domain-pulse 4s ease-in-out infinite;
+  }
+  
+  @keyframes domain-pulse {
+    0%, 100% { 
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    50% { 
+      opacity: 1;
+      transform: scale(1.05); 
+    }
+  }
+  
+  /* Random "hacked" effect for the domain */
+  .evil-domain::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #ff0043 0%, transparent 100%);
+    opacity: 0;
+    animation: domain-glitch 8s ease-in-out infinite;
+  }
+  
+  @keyframes domain-glitch {
+    0%, 5%, 10%, 100% { opacity: 0; }
+    6%, 9% { opacity: 0.3; }
+  }
 }
