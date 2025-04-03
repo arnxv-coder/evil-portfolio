@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 120 100% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 270 85% 61%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 1 100% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 120 100% 50% / 30%;
+    --input: 0 0% 12%;
+    --ring: 120 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-vt323 antialiased bg-cyber-black text-foreground overflow-x-hidden;
+    background-image: 
+      radial-gradient(rgba(177, 74, 237, 0.1) 1px, transparent 1px),
+      radial-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    background-attachment: fixed;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00ff00; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b14aed; 
+  }
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+}
+
+@font-face {
+  font-family: 'VT323';
+  src: url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+}
+
+@layer components {
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-vt323 {
+    font-family: 'VT323', monospace;
+  }
+
+  .glassmorphism {
+    @apply bg-[#1e1e1e] bg-opacity-25 backdrop-blur-md border border-white border-opacity-10 rounded-lg shadow-lg;
+  }
+
+  .terminal-input {
+    @apply bg-[#121212] border border-[#00ff00] text-[#00ff00] font-vt323 focus:outline-none focus:ring-2 focus:ring-[#00ff00] focus:ring-opacity-30;
+  }
+
+  .neon-green {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  }
+  
+  .neon-purple {
+    text-shadow: 0 0 5px #b14aed, 0 0 10px #b14aed, 0 0 15px #b14aed;
+  }
+  
+  .neon-red {
+    text-shadow: 0 0 5px #ff0043, 0 0 10px #ff0043, 0 0 15px #ff0043;
+  }
+
+  .skill-progress {
+    height: 12px;
+    border-radius: 6px;
+    @apply bg-[#1e1e1e] relative overflow-hidden;
+  }
+
+  .skill-progress-bar {
+    @apply absolute top-0 left-0 h-full;
+    transition: width 1s ease-in-out;
+  }
+
+  .section-heading {
+    @apply text-4xl font-orbitron font-bold relative inline-block mb-20;
+  }
+
+  .hire-me-btn {
+    @apply px-8 py-3 bg-transparent border-2 border-[#00ff00] text-[#00ff00] font-orbitron tracking-wider rounded hover:bg-[#00ff00] hover:bg-opacity-20 transition-all duration-300 flex items-center space-x-2;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  @keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(-5px, -5px); }
+    60% { transform: translate(5px, 5px); }
+    80% { transform: translate(5px, -5px); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff00; }
+  }
+
+  .animate-glitch:hover {
+    animation: glitch 0.5s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .typewriter {
+    overflow: hidden;
+    border-right: 3px solid #00ff00;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+  }
+
+  .cyber-green {
+    @apply text-[#00ff00];
+  }
+
+  .cyber-purple {
+    @apply text-[#b14aed];
+  }
+
+  .cyber-red {
+    @apply text-[#ff0043];
+  }
+
+  .cyber-blue {
+    @apply text-[#0ef];
+  }
+
+  .bg-cyber-black {
+    @apply bg-[#0a0a0a];
+  }
+
+  .bg-cyber-darkgray {
+    @apply bg-[#121212];
+  }
+
+  .bg-cyber-gray {
+    @apply bg-[#1e1e1e];
+  }
+
+  .bg-cyber-green {
+    @apply bg-[#00ff00];
+  }
+
+  .bg-cyber-purple {
+    @apply bg-[#b14aed];
+  }
+
+  .bg-cyber-red {
+    @apply bg-[#ff0043];
+  }
+
+  .bg-cyber-blue {
+    @apply bg-[#0ef];
+  }
+
+  .border-cyber-green {
+    @apply border-[#00ff00];
+  }
+
+  .border-cyber-purple {
+    @apply border-[#b14aed];
+  }
+
+  .border-cyber-red {
+    @apply border-[#ff0043];
+  }
+
+  .border-cyber-blue {
+    @apply border-[#0ef];
+  }
+
+  .glitch-container {
+    position: relative;
+  }
+  
+  .glitch-text {
+    position: relative;
+  }
+
+  .glitch-hover:hover::before,
+  .glitch-hover:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 900px, 0, 0);
+  }
+  
+  .glitch-hover:hover::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff0043;
+    animation: glitch-anim 3s infinite linear alternate-reverse;
+  }
+  
+  .glitch-hover:hover::after {
+    left: -2px;
+    text-shadow: -2px 0 #00ff00;
+    animation: glitch-anim2 2.5s infinite linear alternate-reverse;
+  }
+
+  @keyframes glitch-anim {
+    0% { clip: rect(24px, 550px, 90px, 0); }
+    20% { clip: rect(12px, 550px, 150px, 0); }
+    40% { clip: rect(76px, 550px, 36px, 0); }
+    60% { clip: rect(124px, 550px, 78px, 0); }
+    80% { clip: rect(32px, 550px, 144px, 0); }
+    100% { clip: rect(54px, 550px, 115px, 0); }
+  }
+
+  @keyframes glitch-anim2 {
+    0% { clip: rect(85px, 550px, 140px, 0); }
+    20% { clip: rect(42px, 550px, 96px, 0); }
+    40% { clip: rect(27px, 550px, 132px, 0); }
+    60% { clip: rect(67px, 550px, 52px, 0); }
+    80% { clip: rect(143px, 550px, 68px, 0); }
+    100% { clip: rect(35px, 550px, 128px, 0); }
+  }
+}
