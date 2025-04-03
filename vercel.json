@@ -1,8 +1,9 @@
+
 {
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
-  "framework": "vite",
+  "framework": null,
   "rewrites": [
     {
       "source": "/api/(.*)",
@@ -10,7 +11,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/index.html"
     }
   ]
 }
